@@ -39,7 +39,8 @@ body {
     box-shadow: 5px 5px 0 0 #5c5c5c, 7px 7px 0 0 #000000;
 }
 
-.button, .display {
+.button,
+.display {
     border: 1px solid grey;
     color: white;
 }
@@ -77,7 +78,8 @@ button {
     grid-column: span 2;
 }
 
-div, button {
+div,
+button {
     font-family: "Press Start 2P", serif;
 }
 
@@ -86,13 +88,14 @@ div, button {
     background-color: #FF9500;
 }
 
-.num, .dot {
+.num,
+.dot {
     background-color: #c7c7c7;
 }
 
 .top {
     background-color: #505050;
-}   
+}
 
 button:hover {
     background-color: rgb(212, 210, 210);
@@ -100,4 +103,31 @@ button:hover {
 
 .equal {
     background-color: rgb(107, 107, 218);
+}
+
+footer {
+    position: absolute;
+    bottom: 15px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: system-ui, serif;
+    font-weight: 110%;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.fab {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.fa-github {
+    transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
 }
